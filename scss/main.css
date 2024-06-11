@@ -25,3 +25,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.red {
+  color: red;
+}
+
+.error {
+  display: block;
+  color: red;
+}
