@@ -40,3 +40,13 @@
 4. Lav et array med 10 forskllige tal og lav så en funktion der kan plusse alle disse tal sammen til et samlet resultat. Resultatet skal vises i DOM´en.
 
 5. Lav en funktion der tager imod et objekt og bruger object keys til at loope igennem objektet og vise os alle værdier i DOM´en.
+
+## Lektion 4 Øvelsesopgaver
+
+1. Lav to input felter med et onchange event (first name og last name) og vis brugerens fulde navn når der trykkes på en knap
+
+2. Lav en delay funktion der kan tage imod; antal sekunder og en anden funktion. Når man kalder funktionen: delay(4, myFunction) skal den vente 4 sekunder før den kører myFuntion.
+
+3. Lav en stop urs funktion der kan tælle antal sekunder og vise disse i DOM´en
+
+4. Lav en funktion der kan måle og vise os i DOM´en hvor langt vi er scrollet ned på siden i procent (mellem 0 og 100%)
