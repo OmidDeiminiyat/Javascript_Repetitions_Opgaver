@@ -70,3 +70,9 @@
 =======
 4. Lav en funktion der kan måle og vise os i DOM´en hvor langt vi er scrollet ned på siden i procent (mellem 0 og 100%)
 >>>>>>> b1839822e012f5ff1d8a1ab015dc5ce2a7d627bd
+
+
+5. Lav et system der kan vise en toast (notifikation) beskeden skal kunne vises i toppen og bunder til venstre og til højre. 
+Jeres toast system skal også kunne tage imod en besked og den skal kunne vise; en grøn (success), en gul (warning) samt en rød(error) besked. 
+Beskeden skal kunne vises i det antal sekunder man kalder funktionen med. 
+Det vil sige at jeres funktion skal kunne tage imod følgende parametre: message, time, position og severity (success, warning, error).

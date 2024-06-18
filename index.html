@@ -112,6 +112,58 @@
     <button id="stopButton">Stop</button>
     <button id="resetButton">Reset</button>
       </div>
+      <style>
+         .toast {
+        position: fixed;
+        z-index: 1000; /* Ensure toast is on top */
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Success toast style */
+    .toast.success {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    /* Warning toast style */
+    .toast.warning {
+        background-color: #f0ad4e;
+        color: #fff;
+    }
+
+    /* Error toast style */
+    .toast.error {
+        background-color: #d9534f;
+        color: #fff;
+    }
+
+
+    .top-left {
+        top: 20px;
+        left: 20px;
+    }
+
+    .top-right {
+        top: 20px;
+        right: 20px;
+    }
+
+    .bottom-left {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .bottom-right {
+        bottom: 20px;
+        right: 20px;
+    }
+      </style>
       <div id="L4_4">
         <h4>Opgave 4</h4>
         
@@ -119,6 +171,7 @@
       </div>
       <div id="L4_5">
         <h4>Opgave 5</h4>
+        <div id="toastContainer"></div>
       </div>
     </section>
     <section class="mainContainer">

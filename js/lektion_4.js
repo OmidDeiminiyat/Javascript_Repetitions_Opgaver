@@ -106,3 +106,42 @@ lastname.addEventListener('change', () => {
         window.addEventListener('scroll', updateScrollPercentage);
     });
     
+
+    // Opgave 5
+
+function showToast(message, type, position) {
+    const toast = document.createElement('div');
+    toast.classList.add('toast', type);
+    toast.innerText = message;
+
+  
+    if (position === 'top-left') {
+        toast.classList.add('top-left');
+    } else if (position === 'top-right') {
+        toast.classList.add('top-right');
+    } else if (position === 'bottom-left') {
+        toast.classList.add('bottom-left');
+    } else if (position === 'bottom-right') {
+        toast.classList.add('bottom-right');
+    }
+
+
+    document.getElementById('toastContainer').appendChild(toast);
+
+    setTimeout(function() {
+        toast.style.opacity = 1;
+    }, 100);
+
+  
+    setTimeout(function() {
+        toast.style.opacity = 0;
+        setTimeout(function() {
+            toast.remove();
+        }, 300);
+    }, 3000);
+}
+
+// Example usage:
+showToast('Success message', 'success', 'top-left');
+showToast('Warning message', 'warning', 'bottom-left');
+showToast('Error message', 'error', 'top-right');
